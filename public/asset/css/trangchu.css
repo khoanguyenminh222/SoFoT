@@ -1,0 +1,300 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+/* Control the left side */
+
+.left {
+    left: 0;
+}
+
+
+/* Control the right side */
+
+.right {
+    right: 0;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+body {
+    background: #eff1f4;
+}
+
+.login-form {
+    z-index: 1;
+    background: #ffffff;
+    max-width: 550px;
+    margin: 20px auto 100px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.input-login {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 1px;
+    margin: 0 0 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-style: solid;
+    border-color: #71937a;
+    border-radius: 30px;
+}
+
+.login-page {
+    width: 500px;
+    padding: 5% 0 0;
+    margin: auto;
+}
+
+#button-regis,
+#button-login {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #00a72b;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    border: solid;
+    border-radius: 30px;
+}
+
+table {
+    width: 100%;
+}
+
+#button-regis:hover {
+    background: #028d26;
+}
+
+
+/*****************************************************/
+
+
+/* The sidebar menu */
+
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #2b2b2b;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+
+/* The sidebar links */
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* The button used to open the sidebar */
+
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(77, 76, 76);
+    color: white;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    margin-top: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:700px) {
+    .hidden-xs {
+        visibility: hidden;
+    }
+}
+
+
+/* Css đăng tin */
+
+.well-social-post {
+    border-radius: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 0;
+}
+
+.well-social-post .glyphicon,
+.well-social-post .fa,
+.well-social-post [class^='icon-'],
+.well-social-post [class*='icon-'] {
+    font-weight: bold;
+    color: #999999;
+}
+
+.well-social-post .list-inline {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.well-social-post .list-inline li {
+    position: relative;
+}
+
+.well-social-post .form-control {
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.well-social-post .list-inline {
+    padding: 10px;
+}
+
+.well-social-post .list-inline li+li {
+    margin-left: 10px;
+}
+
+.well-social-post .post-actions {
+    margin: 0;
+    background-color: #f6f7f8;
+    border-top-color: #e9eaed;
+}
+
+
+/*********************************/
+
+
+/* Contact */
+
+.Contact {
+    overflow: auto;
+    height: 500px;
+    position: fixed;
+    padding: 0 0 0 100px;
+}
+
+.User:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.list-friend {
+    border-bottom: #000000;
+}
+
+
+/* Chat */
+
+#chat-full {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 25%;
+    height: 345px;
+    visibility: hidden;
+}
+
+#chat-mini {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
